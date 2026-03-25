@@ -15,4 +15,11 @@ class Machine {
   set cash(int value) => _cash = value;
 
   Machine(this._coffeeBeans, this._milk, this._water, this._cash);
+
+  static const int CoffeeBeansForEspresso = 50;
+  static const int WaterForEspresso = 100;
+  static const int MilkForEspresso = 0;
+
+  bool isAvailable(){
+    return _coffeeBeans >= CoffeeBeansForEspresso && _water >= WaterForEspresso;
 }
