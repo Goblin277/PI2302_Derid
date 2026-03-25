@@ -23,22 +23,19 @@ void main() {
 
     switch (input) {
       case "1":
-      case "приготовить кофе":
         CoffeMachine.makingCoffee();
         break;
       case "2":
-      case "добавить ресурс":
         CoffeMachine.coffeeBeans += addBeansAmount;
         print("Ресурсы пополнены. Теперь зерен: ${CoffeMachine.coffeeBeans}");
         break;
       case "3":
-      case "выход":
         print("Программа завершена.");
         return;
       case "":
         break;
       default:
-        print("Ошибка: команда '$input' не распознана. Используйте цифры 1, 2 или 3.");
+        print("Ошибка: данная команда не распознана. Используйте цифры 1, 2 или 3.");
     }
   }
 }
